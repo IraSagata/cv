@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F6F8;
+}
+
+p,
+span,
+.aside .contact .list-group-item {
+    font-size: 16px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+/* Header */
+.navbar-expand-lg {
+    justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header,
+.section-promo {
+    background-color: darkcyan;
+}
+
+.section-promo .card {
+    transform: translateY(5rem);
+    border: none;
+}
+
+.section-promo .container-lg {
+    margin-bottom: 5rem;
+}
+
+/* Icons */
+.icon:before {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.icon {
+    position: relative;
+    font-size: 1rem;
+}
+
+.aside .contact .btn {
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.aside .contact .btn:hover {
+    animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat {
+	to { transform: scale(1.4); }
+}
+
+/* Aside */
+.aside h2,
+.content .education h2,
+.content .languages h2,
+.content .professional-experience h2,
+.content .technology h2,
+.content .tools h2 {
+    color: darkcyan;
+    margin-bottom: .5rem;
+}
+
+.aside .about,
+.aside .contact,
+.content .education,
+.content .languages,
+.content .professional-experience,
+.content .technology,
+.content .tools {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px dashed darkcyan;
+    border-radius: 0.25rem;
+}
+
+.aside .contact .list-inline,
+.aside .about p {
+    margin-bottom: 0;
+}
+
+/* Content */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content .technology .list-group-flush > .list-group-item,
+.content .tools .list-group-flush > .list-group-item {
+    border: none;
+}
+
+.content .technology .list-group-flush .list-group-item p,
+.tools .list-group-flush .list-group-item p {
+    margin-bottom: 0;
+}

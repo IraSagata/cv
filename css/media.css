@@ -1,0 +1,22 @@
+ /* Small devices (landscape phones, 576px and up to 767) */
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+
+}
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+    .aside, .content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+ /* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .content {
+        margin-left: 5rem;
+    }
+    
+}
