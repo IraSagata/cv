@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 html {
@@ -34,7 +41,9 @@ span,
 
 /* Header */
 .navbar-expand-lg {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -49,7 +58,9 @@ span,
 }
 
 .section-promo .card {
-    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+        -ms-transform: translateY(5rem);
+            transform: translateY(5rem);
     border: none;
 }
 
@@ -63,7 +74,8 @@ span,
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
 }
 
 .icon {
@@ -77,13 +89,19 @@ span,
 }
 
 .aside .contact .btn:hover {
-    animation: beat .25s infinite alternate;
-	transform-origin: center;
+    -webkit-animation: beat .25s infinite alternate;
+            animation: beat .25s infinite alternate;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
 }
 
 /* Heart beat animation */
+@-webkit-keyframes beat {
+	to { -webkit-transform: scale(1.4); transform: scale(1.4); }
+}
 @keyframes beat {
-	to { transform: scale(1.4); }
+	to { -webkit-transform: scale(1.4); transform: scale(1.4); }
 }
 
 /* Aside */
@@ -118,7 +136,8 @@ span,
 
 /* Content */
 .accordion-button:focus {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .accordion-button {
